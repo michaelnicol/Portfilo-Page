@@ -2,5 +2,55 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: blue;
+  background-color: white;
+}
+.letter {
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  border: 1px solid blue;
+}
+.n, .i, .c, .o, .l, .m, .a, .e, .l {
+  font-size: 50px;
+    align-self: center;
+}
+.n{
+  grid-area: n;
+}
+.i{
+  grid-area: i;
+}
+.c{
+  grid-area: c;
+}
+.o{
+  grid-area: o;
+}
+.l{
+  grid-area: l;
+}
+.h{
+  grid-area: h;
+}
+.a{
+  grid-area: a;
+}
+.e{
+  grid-area: e;
+}
+.lettersGrid {
+  margin: 0 auto;
+  border: 1px solid red;
+  height: relative;
+  display: grid;
+  min-height: 700px;
+  min-width: 500px;
+  grid-template-columns: repeat(1fr,7);
+  grid-template-rows: repeat(1fr,5);
+  grid-template-areas:
+  ". n . . . . ."
+  "m i c h a e l"
+  ". c . . . . ."
+  ". o . . . . ."
+  ". l . . . . .";
 }
